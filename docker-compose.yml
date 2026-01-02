@@ -1,0 +1,12 @@
+services:
+  shippingservice:
+    build: ./src/shippingservice
+    container_name: shippingservice
+    ports:
+      - "8080:8080"  # keep the same as you used locally
+
+  productcatalogservice:
+    build: ./src/productcatalogservice
+    container_name: productcatalogservice
+    ports:
+      - "8081:8081"  # adjust to match your service
